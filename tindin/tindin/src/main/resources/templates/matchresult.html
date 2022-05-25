@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Your match result!</title>
+    </head>
+    <body>
+        <div style="text-align:center">
+            <div data-th-if="${matches}">
+                Your match result!
+                <p>${lm.getUserTwo()}</p>
+                <p>${lm.getPercentage()}</p>
+                <p>${lm.getResult()}</p>
+            </div>
+            <div data-th-if="${!matches}">
+                No Matches Found :(
+            </div>
+        </div>
+    </body>
+</html>
